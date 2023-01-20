@@ -12,16 +12,16 @@ class OptionsForNewAccount : AppCompatActivity() {
         binding = ActivityOptionsForNewAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button3.setOnClickListener {
+        binding.btnSavingAccount.setOnClickListener {
 
             val intent = Intent(this,OpeningSavingAccount::class.java)
             startActivity(intent)
         }
-        binding.button4.setOnClickListener {
+        binding.btnCurrentAccount.setOnClickListener {
             val intent = Intent(this,OpeningCurrentAccount::class.java)
             startActivity(intent)
         }
-        binding.button5.setOnClickListener {
+        binding.btnLoanAccount.setOnClickListener {
             val intent = Intent(this,OpeningLoanAccount::class.java)
             startActivity(intent)
         }

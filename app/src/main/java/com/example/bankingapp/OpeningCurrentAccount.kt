@@ -20,21 +20,21 @@ class OpeningCurrentAccount : AppCompatActivity() {
 
         appDb = AppDatabase.getDatabase(this)
 
-        binding.btnwritingdata.setOnClickListener {
+        binding.btnWritingData.setOnClickListener {
             writeData()
 
         }
 
     }
     private fun writeData(){
-        val fullName = binding.textView11.text.toString()
-        val fatherName = binding.textView12.text.toString()
-        val accNo = binding.textView13.text.toString()
-        val emailId = binding.textView14.text.toString()
-        val address = binding.textView15.text.toString()
-        val amount = binding.textView16.text.toString()
+        val fullName = binding.enterName2.text.toString()
+        val fatherName = binding.enterFathersName2.text.toString()
+        val accNo = binding.enterMblNo2.text.toString()
+        val emailId = binding.enterEmailId2.text.toString()
+        val address = binding.enterAddress2.text.toString()
+        val amount = binding.enterAddMoney2.text.toString()
 
-        val age = binding.textView25.text.toString()
+        val age = binding.yourAge1.text.toString()
 
         //key wala
         val customerId = (123456..654321).random()
@@ -60,13 +60,12 @@ class OpeningCurrentAccount : AppCompatActivity() {
             intent.putExtra("acc_no",accNo)
             startActivity(intent)
 
-            binding.textView11.text.clear()
-            binding.textView12.text.clear()
-            binding.textView13.text.clear()
-            binding.textView14.text.clear()
-            binding.textView15.text.clear()
-            binding.textView16.text.clear()
-            binding.textView25.text.clear()
+            binding.enterName2.text.clear()
+            binding.enterFathersName2.text.clear()
+            binding.enterMblNo2.text.clear()
+            binding.enterEmailId2.text.clear()
+            binding.enterAddress2.text.clear()
+            binding.enterAddMoney2.text.clear()
 
         }else{
             Toast.makeText(this,"Fill All the Fields Or You May Not Have Sufficient Age To Open a Current Account", Toast.LENGTH_SHORT).show()

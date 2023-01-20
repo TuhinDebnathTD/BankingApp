@@ -32,16 +32,16 @@ class AccountDetails : AppCompatActivity() {
     private suspend fun displayData(user: User){
 
         withContext(Dispatchers.Main){
-            binding.textView23.text = "Name = " + user.name.toString()
-            binding.textView24.text = "Father's Name = " + user.fatherName.toString()
-            binding.textView26.text = "Account Number = " + user.accountNumber.toString()
-            binding.textView27.text = "Customer Id = " + user.customerId.toString()
-            binding.textView28.text = "Email Id = " + user.emailId.toString()
-            binding.textView29.text = "Address = " + user.address.toString()
-            binding.textView30.text = "Account Balance = " + user.balance.toString()
-            binding.textView31.text = "ATM card Number = " + user.atmNumber.toString()
-            binding.textView32.text = "cvv no = " + user.cvvNo.toString()
-            binding.textView33.text = "Expiry Date = " + user.expiryDate.toString()
+            binding.nameText1.text = "Name = " + user.name.toString()
+            binding.fatherNameText2.text = "Father's Name = " + user.fatherName.toString()
+            binding.accNumberText1.text = "Account Number = " + user.accountNumber.toString()
+            binding.customerIdText1.text = "Customer Id = " + user.customerId.toString()
+            binding.emailIdText1.text = "Email Id = " + user.emailId.toString()
+            binding.addressText1.text = "Address = " + user.address.toString()
+            binding.accountBalanceText1.text = "Account Balance = " + user.balance.toString()
+            binding.atmCardNoText1.text = "ATM card Number = " + user.atmNumber.toString()
+            binding.cvvNoText1.text = "cvv no = " + user.cvvNo.toString()
+            binding.expiryDate1.text = "Expiry Date = " + user.expiryDate.toString()
         }
     }
     private fun readData(){

@@ -13,11 +13,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button1.setOnClickListener {
+        binding.btnOpenNewAccount.setOnClickListener {
             val intent=Intent(this,OptionsForNewAccount::class.java)
             startActivity(intent)
         }
-        binding.button2.setOnClickListener {
+        binding.btnOperateExistingAccount.setOnClickListener {
             val intent = Intent(this,OperatingExistingAccount::class.java)
             startActivity(intent)
         }

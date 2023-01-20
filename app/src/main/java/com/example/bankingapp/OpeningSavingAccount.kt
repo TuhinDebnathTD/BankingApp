@@ -28,12 +28,12 @@ class OpeningSavingAccount : AppCompatActivity() {
     }
 
     private fun writeData(){
-        val fullName = binding.textView3.text.toString()
-        val fatherName = binding.textView4.text.toString()
-        val accNo = binding.textView5.text.toString()
-        val emailId = binding.textView6.text.toString()
-        val address = binding.textView7.text.toString()
-        val amount = binding.textView8.text.toString()
+        val fullName = binding.enterName1.text.toString()
+        val fatherName = binding.enterFathersName1.text.toString()
+        val accNo = binding.enterMblNo1.text.toString()
+        val emailId = binding.enterEmailId1.text.toString()
+        val address = binding.enterAddress1.text.toString()
+        val amount = binding.enterAddMoney1.text.toString()
 
         //key wala
         val customerId = (123456..654321).random()
@@ -59,12 +59,12 @@ class OpeningSavingAccount : AppCompatActivity() {
             intent.putExtra("acc_no",accNo)
             startActivity(intent)
 
-            binding.textView3.text.clear()
-            binding.textView4.text.clear()
-            binding.textView5.text.clear()
-            binding.textView6.text.clear()
-            binding.textView7.text.clear()
-            binding.textView8.text.clear()
+            binding.enterName1.text.clear()
+            binding.enterFathersName1.text.clear()
+            binding.enterMblNo1.text.clear()
+            binding.enterEmailId1.text.clear()
+            binding.enterAddress1.text.clear()
+            binding.enterAddMoney1.text.clear()
 
         }else{
             Toast.makeText(this,"Please Fill out All the Fields",Toast.LENGTH_SHORT).show()
